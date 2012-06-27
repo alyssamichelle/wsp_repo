@@ -1,8 +1,18 @@
   body {
-    background: purple;
+    background: #ccc url("../img/css/square_bg.png") repeat left top;
+    width: 960px;
+    margin: 0px auto;
+    font-family: helvetica neue, sans-serif;
+    font-weight: 100;
   }
   @media all and (max-width: 640px) {
   body {
     background: #ccc;
   }
-}
+  }
+
+  h1, p{
+  	margin: 20px 30px;
+  	line-height: 20px;
+
+  }
