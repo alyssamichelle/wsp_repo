@@ -20,18 +20,19 @@
   }
 
   nav{
-  display: inline;
-  color: #000;
-  margin-top: 5px;
+    display: inline;
+    color: #000;
+    margin-top: 5px;
   }
   ul{
     overflow: hidden;
 
   }
   img{
-    width: 390px;
+    width: 190px;
     border: 5px solid white;
   }
+  
   p{
     color: #000;
   }
@@ -39,14 +40,14 @@
 /* #home Styles
 ================================================== */
   nav li{
-  float: left;
-  width: 80px;
-  margin: 20px;
+    float: left;
+    width: 80px;
+    margin: 20px;
   }
 /* #more Styles
 ================================================== */
   ul.whisker_li li{
-  list-style-image: url();
+    list-style: round;
   }
 /* #Media Queries
 ================================================== */
