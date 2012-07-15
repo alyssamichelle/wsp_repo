@@ -1,3 +1,11 @@
+/*Colors
+#ffefd0 palepeach
+#fffee1 paleyellow
+#d0ebea paleblue
+#a1d5d2 darkerblue
+#8b7a5b brown*/
+
+
 
 /* Table of Content
 ==================================================
@@ -9,25 +17,26 @@
 
 /* #Site Styles
 ================================================== */
+
+  .container{
+    margin-top: 0px;
+    overflow: hidden;
+    background-color: #ffefd0;
+  }
+
   body {
-    background: #ccc url("../img/css/square_bg.png") repeat left top;
-    font-family: helvetica neue, sans-serif;
+    font-family: "Quicksand", helvetica, sans-serif;
     font-weight: 100;
+    margin-top: 0px;
   }
 
   h1, h2, h3, h4, li{
+    font-family: "Quicksand", helvetica, sans-serif;
+    font-weight: 500;
     color: #000;
+    margin-top: 10px;
   }
 
-  nav{
-    display: inline;
-    color: #000;
-    margin-top: 5px;
-  }
-  ul{
-    overflow: hidden;
-
-  }
   img{
     width: 190px;
     border: 5px solid white;
@@ -35,14 +44,42 @@
   
   p{
     color: #000;
+    line-height: 1.5;
   }
 
 /* #home Styles
 ================================================== */
+    
+  nav{
+    display: inline;
+    color: #000;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+
+  ul{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
   nav li{
+    background-color: #a1d5d2;
     float: left;
-    width: 80px;
-    margin: 20px;
+    width: 16.266666667%;
+    padding: 10px 0px;
+    text-align: center;
+    margin: .2%;
+  }
+
+  nav li:hover{
+    background-color: #d0ebea ;
+  }
+
+  a{
+    color: #000;
+    text-decoration: none;r
   }
 /* #more Styles
 ================================================== */
