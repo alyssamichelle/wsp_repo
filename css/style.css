@@ -23,12 +23,12 @@ body {
 }
 
 .wrapper {
-  width: 960px;
+  width: 67%;
   margin: 0 auto;
 }
 
 .chubby-wrapper {
-  width: 1040px;
+  width: 72%;
   margin: 0 auto;
 }
 
@@ -39,6 +39,10 @@ header{
 
 header h1{
   float: right;
+}
+
+header h1 img{
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
 }
 
 h1, h2, h3, h4, li{
@@ -66,7 +70,10 @@ a:hover{
 /* #banner Styles
 ================================================== */
 #banner{
-  height: 288px;
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+/*  box-shadow-top: 0px;*/
+  background: url('../img/banner_home.png') no-repeat center top;
 }
 #banner img{
   width: 1040px;
@@ -80,15 +87,18 @@ a:hover{
   font-weight: book;
   font-size: 40px;
   text-align: center;
-  margin: 0px 0px 40px;
+  margin: 0px auto 40px;
   padding: 0px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
 }
 /* #section Styles
 ================================================== */
 
 section{
   background-color: #7da0a3;
+  padding: 20px;
 }
+
 
 /* #home Styles
 ================================================== */
