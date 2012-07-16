@@ -7,7 +7,6 @@
 		<title>Orlando Chin Rescue | Chinchillas who need a home</title>
 
 		<link rel=stylesheet href="css/normalize.css">
-		<link rel="stylesheet" href="css/skeleton.css">
 		<link rel=stylesheet href="css/style.css">
 	</head>
 <body>
@@ -18,26 +17,81 @@
 	================================================== -->
 
 	<div class="container">
-			<h1 class="remove-bottom" class="clearfix">Orlando Chinchilla Rescue</h1>
-			<h5>Helping Chillas find good <em>homes</em>.</h5>
-			<hr />	
 
-			<div class="sixteen columns">
+		<header>
+			<div class="wrapper">
+				<h1><a href="index.html"><img src="img/logo.png"/></a></h1>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="contact.html">Contact</a></li>
+						<li ><a class="active" href="index.html">Home</a></li>
+						<li><a href="contact.html">Contact</a></li>
 						<li><a href="adopt.html">Adopt</a></li>
 						<li><a href="photos.html">Photos</a></li>
-						<li><a href="more.html">More Info</a></li>
+						<li><a href="more.html">More </a></li>
 						<li><a href="donate.html">Donate</a></li>
 					</ul>
 				</nav>
 			</div>
+		</header>
 
-		<div class="sixteen columns">
-			<h3>About</h3>
-			<p>Nine years ago I received my first chinchilla. At that time I did not have any information regarding the proper care of chinchillas and the information that her previous owner had given me was incorrect. I began working with a veterinarian who taught me the basic care of chinchillas. From there I began my own research and discovered how little people knew of these wonderful pets.  I am a chinchilla owner located in the Orlando , Florida area.  Most of my work consists of taking in and caring for rescues as well as my own pets. I wanted to start this site to help people become more aware of the proper care of chinchillas and also to share my experiences.</p>
+
+
+		<div class="chubby-wrapper">
+			<a id="banner_contact" href="adopt.html"></a>
+			<a href="adopt.html"><p class="caption wrapper">Adopt Today</p></a>
+		</div>
+
+		<div class="wrapper">
+
+			<form><fieldset>
+				<h1>Contact Us Today</h1>
+				<input placeholder="First name" value="first name" required tabindex="1" autofocus></input>
+
+				<input placeholder="Last name" value="last name"required tabindex="2"></input>
+
+				<input placeholder="john@gmail.com" value="email" required tabindex="3"></input>
+
+				<textarea placeholder="Your message here" value="message" required tabindex="4"></textarea>
+
+				<select value="purpose" required tabindex="5">
+					<option selected="selected">I am ...</option>
+					<option>Interested in Adopting</option>
+					<option>Have a Pet that Needs a New Home</option>
+					<option>I am a Vet</option>
+					<option>I am a Breeder</option>
+					<option>Other</option>
+				</select>
+
+<!-- 				if I have a pet that needs a new home selected then show the rest of the form below -->
+
+				<h2>Age of Chinchilla</h2>
+					<select value="age">
+						<option>&lt;1</option>
+						<option>1-5</option>
+						<option>6-10</option>
+						<option>&gt;10</option>
+					</select>
+				
+				<h2>Sex of Chinchilla</h2>
+				<label>Male</label>
+				<input type="radio" name="sex" selected="selected">Male</radio>
+				<label>Female</label>
+				<input type="radio" name="sex">Female</radio>
+
+				<select value="bought from">
+					<option selected="selected">Where did you get the Chilla?</option>
+					<option>Pet Store</option>
+					<option>Breeder</option>
+					<option>Other</option>
+				</select>
+
+				<textarea placeholder="Vet records"></textarea>
+
+				
+
+
+			
+			</fieldset></form>
 		</div>
 	</div><!-- container -->
 

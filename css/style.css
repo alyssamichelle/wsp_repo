@@ -47,7 +47,7 @@ header h1 img{
 
 h1, h2, h3, h4, li{
   font-family: "Quicksand", helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   color: #000;
   margin-top: 0px;
 }
@@ -65,56 +65,6 @@ a{
 
 a:hover{
   /*box-shadow: inset #383737 0px 0px 2px 1px;*/
-}
-
-/* #banner Styles
-================================================== */
-#banner{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-/*  box-shadow-top: 0px;*/
-  background: url('../img/banner_home.png') no-repeat center top;
-}
-#banner img{
-  width: 1040px;
-  margin: 0px;
-  height: 291px;
-}
-
-.caption{
-  background-color: #804d75;
-  font-family: "quicksand";
-  font-weight: book;
-  font-size: 40px;
-  text-align: center;
-  margin: 0px auto 40px;
-  padding: 0px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-}
-/* #section Styles
-================================================== */
-
-section{
-  background-color: #7da0a3;
-  padding: 20px;
-}
-
-
-/* #home Styles
-================================================== */
-  
-nav{
-  display: inline;
-  color: #000;
-  margin-top: 5px;
-  overflow: hidden;
-}
-
-ul{
-  overflow: hidden;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
 }
 
 /* #nav Styles
@@ -136,10 +86,12 @@ nav li:hover{
 }
 
 nav a{
-  background-color: rgba( 157, 157, 157, .7);
+  background-color: rgba( 157, 157, 157, .8);
   color: #000;
   text-decoration: none;
   padding: 10px 0px;
+  font-weight: bold;
+  font-size: 34px;
 }
 
  a:hover, a.active{
@@ -147,12 +99,98 @@ nav a{
 
 a.active:hover{
   box-shadow: none;
-  background-color: rgba( 157, 157, 157, .7);
+  background-color: rgba( 157, 157, 157, .8);
 }
-s
+
 ul.whisker_li li{
   list-style: round;
 }
+
+/* #home Styles
+================================================== */
+  
+nav{
+  display: inline;
+  color: #000;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+ul{
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+/* #banner Styles
+================================================== */
+#banner_home{
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  background: url('../img/banner_home.png') no-repeat center top;
+}
+#banner_adopt{
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  background: url('../img/banner_adopt.png') no-repeat center top;
+}
+#banner_contact{
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  background: url('../img/banner_contact.png') no-repeat center top;
+}
+#banner_photos{
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  background: url('../img/banner_photos.png') no-repeat center top;
+}
+#banner_more{
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  background: url('../img/banner_more.png') no-repeat center top;
+}
+#banner_donate{
+  height: 266px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  background: url('../img/banner_donate.png') no-repeat center top;
+}
+#banner img{
+  width: 1040px;
+  margin: 0px;
+  height: 291px;
+}
+
+.caption{
+  background-color: #804d75;
+  font-family: "quicksand";
+  font-weight: book;
+  font-size: 40px;
+  text-align: center;
+  margin: -3px auto 40px;
+  padding: 0px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+}
+/* #section Styles
+================================================== */
+
+h1{
+    margin-bottom: 0px;
+}
+section{
+  background-color: #7da0a3;
+  padding: 20px;
+}
+
+.wrapper a, .chubby-wrapper a{
+  text-decoration: none; 
+
+}
+
+
+
+
+
 /* #Media Queries
 ================================================== */
 
@@ -169,5 +207,16 @@ ul.whisker_li li{
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+
+  body{
+    position: relative;
+  }
+
+  nav{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}
 
