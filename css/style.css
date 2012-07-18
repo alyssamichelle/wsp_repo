@@ -45,7 +45,7 @@ header h1 img{
   box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
 }
 
-h1, h2, h3, h4, li{
+h1, h2, h3, h4{
   font-family: "Quicksand", helvetica, sans-serif;
   font-weight: bold;
   color: #000;
@@ -102,8 +102,8 @@ a.active:hover{
   background-color: rgba( 157, 157, 157, .8);
 }
 
-ul.whisker_li li{
-  list-style: round;
+a#contact_button{
+  background: url("../img/contact_button.png");
 }
 
 /* #home Styles
@@ -188,6 +188,16 @@ section{
 }
 
 
+/* #li on more pg Styles
+================================================== */
+
+section ul li{
+  list-style: disc;
+  /*list-style-image: ;*/
+  font-weight: book;
+  line-height: 25px;
+  font-family: "Quicksand", helvetica, sans-serif;
+}
 
 
 
