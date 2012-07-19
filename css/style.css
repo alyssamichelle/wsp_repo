@@ -69,6 +69,20 @@ a:hover{
 
 /* #nav Styles
 ================================================== */
+nav{
+  display: inline;
+  color: #000;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+ul{
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
 nav li{
   float: left;
   text-align: center;
@@ -106,21 +120,78 @@ a#contact_button{
   background: url("../img/contact_button.png");
 }
 
-/* #home Styles
+/* #Contact Form Styles
 ================================================== */
-  
-nav{
-  display: inline;
-  color: #000;
-  margin-top: 5px;
-  overflow: hidden;
+form{
+  background-image: url("../img/paper_crumple_white.png" repeat);
 }
 
-ul{
-  overflow: hidden;
-  padding: 0px;
+fieldset{
+  border: none;
+  padding: 0px 10%;
+  width: 60%;
+  margin: 0px 10%;
+  font-family: "Quicksand";
+}
+
+legend{
+  font-weight: 600;
+  font-size: 40px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+label{
+  float: left;
+  clear: left;
+}
+form fieldset label{
+  font-weight: 400;
+  font-size: 30px;
+}
+
+select, input, textarea{
+  float: left;
+  clear: both;
+  font-size: 25px;
+  font-family: "Quicksand";
+}
+
+textarea{
+  height: 300px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+ fieldset.radio{
+  padding: 10px;
   margin: 0px;
   width: 100%;
+  margin: 5px 0px 5px;
+ }
+
+.radio label, .radio input{
+  display: block;
+  float: left;
+  clear: none;
+  margin: 0px;
+  width: auto;
+  margin: 0px 5px 5px;
+}
+
+input[type="submit"]{
+  float: right;
+  width: 100px;
+  height: 35px;
+  margin: 0 20% 100px;
+
+}
+
+input[type="submit"]:hover{
+  background-color: grey;
 }
 
 /* #banner Styles

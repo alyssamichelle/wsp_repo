@@ -36,14 +36,13 @@
 
 
 
-		<div class="chubby-wrapper">
+		<article class="chubby-wrapper">
 			<a id="banner_contact" href="adopt.html"></a>
 			<a href="adopt.html"><p class="caption wrapper">Adopt Today</p></a>
-		</div>
+		</article>
 
-		<div class="wrapper">
-
-			<form><fieldset>
+		<form class="wrapper">
+			<fieldset >
 				<h1>Contact Us Today</h1>
 				<input placeholder="First name" value="first name" required tabindex="1" autofocus></input>
 
@@ -59,44 +58,42 @@
 					<option>Have a Pet that Needs a New Home</option>
 					<option>I am a Vet</option>
 					<option>I am a Breeder</option>
-					<option>Other</option>
+					<option>A chinchilla spy, infiltrating your website</option>
 				</select>
+			</fieldset>
 
-<!-- 				if I have a pet that needs a new home selected then show the rest of the form below -->
-
-				<h2>Age of Chinchilla</h2>
-					<select value="age">
-						<option>&lt;1</option>
-						<option>1-5</option>
-						<option>6-10</option>
-						<option>&gt;10</option>
-					</select>
+		<!-- 				if I have a pet that needs a new home selected then show the rest of the form below -->
+<!-- 			<fieldset>
+				<label>Age of Chinchilla</label>
+				<select value="age">
+					<option>&lt;1</option>
+					<option>1-5</option>
+					<option>6-10</option>
+					<option>&gt;10</option>
+				</select>
 				
-				<h2>Sex of Chinchilla</h2>
-				<label>Male</label>
-				<input type="radio" name="sex" selected="selected">Male</radio>
-				<label>Female</label>
-				<input type="radio" name="sex">Female</radio>
+				<label>Sex of Chinchilla</label>
+				<fieldset class="radio">
+					<legend>Gender of Pet</legend>
+					<label>Male</label>
+					<input type="radio" name="sex" value="male">
 
-				<select value="bought from">
-					<option selected="selected">Where did you get the Chilla?</option>
+					<label>Female</label>
+					<input type="radio" name="sex" checked="checked" value="female">
+				</fieldset>
+
+				<label for="bought from">Where did you get the Chinchilla?</label>
+				<select name="bought from">
 					<option>Pet Store</option>
 					<option>Breeder</option>
 					<option>Other</option>
 				</select>
 
-				<textarea placeholder="Vet records"></textarea>
-
-				
-
-
-			
-			</fieldset></form>
-		</div>
+				<label for="vet records">Please list any Vet record information below.</label>
+				<textarea name="vet records" placeholder="Vet records"></textarea>
+			</fieldset> -->
+			<input type="submit" name="submit" value="submit" />
+		</form>	
 	</div><!-- container -->
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>
