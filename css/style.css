@@ -51,22 +51,12 @@ a {
 a:hover {
   /*box-shadow: inset #383737 0px 0px 2px 1px;*/ }
 
-footer {
-  background: #4d4f50 url("../img/css/footer_pattern.jpg") repeat-x left bottom;
-  height: 200px; }
-  footer nav li {
-    float: left;
-    margin-right: 20px;
-    line-height: 30px; }
-  footer nav li:last-child {
-    margin-right: 0px; }
-
 /* #nav Styles
 ================================================== */
 header nav {
-  display: inline;
+  display: inline-block;
   color: #000;
-  margin-top: 5px;
+  margin-top: 40px;
   overflow: hidden;
   position: relative; }
 
@@ -92,22 +82,23 @@ header ul {
   width: 100%; }
 
 header nav li {
-  float: left;
-  text-indent: -9999px;
-  margin: 0px 0px 0px 15px; }
+  float: left; }
 
-header nav li:first-child {
+header nav li:last-child {
   margin: 0px;
   width: 100px; }
 
 header nav li {
   width: 100px;
   height: 112px;
-  margin-right: 100px; }
+  margin-right: 50px; }
 
 header nav li a {
   display: block;
-  background: url("../img/icon/icon_sprite.png") no-repeat; }
+  background: url("../img/icon/icon_sprite.png") no-repeat;
+  vertical-align: bottom;
+  line-height: 200px;
+  color: #f3f3f3; }
 
 nav li a.home {
   background-position: 0px 0px; }
@@ -146,12 +137,21 @@ nav li a.donate:hover {
   background-position: -520px -112px; }
 
 header a.active:hover {
-  box-shadow: none;
-  background-color: rgba(157, 157, 157, 0.8); }
+  box-shadow: none; }
 
 header a.bottom_nav {
   margin: 0px auto;
   float: left; }
+
+footer {
+  background: #4d4f50 url("../img/css/footer_pattern.jpg") repeat-x left bottom;
+  height: 200px; }
+  footer nav li {
+    float: left;
+    margin-right: 20px;
+    line-height: 30px; }
+  footer nav li:last-child {
+    margin-right: 0px; }
 
 /* #Contact Form Styles
 ================================================== */
