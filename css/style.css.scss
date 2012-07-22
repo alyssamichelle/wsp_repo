@@ -129,26 +129,22 @@ header nav li a {
 }
 
 nav li a.home { background-position: 0px 0px; }
-nav li a.home:hover { background-position: 0px -113px; }
+nav li a.home:hover, .active { background-position: 0px -113px; }
 
 nav li a.contact { background-position:-105px 0px; }
-nav li a.contact:hover { background-position: -100px -113px; }
+nav li a.contact:hover, .active { background-position: -100px -113px; }
 
 nav li a.adopt { background-position: -210px 0px; }
-nav li a.adopt:hover { background-position: -210px -112px; }
+nav li a.adopt:hover, .active { background-position: -210px -112px; }
 
 nav li a.photos { background-position: -310px 0px; }
-nav li a.photos:hover { background-position: -310px -112px; }
+nav li a.photos:hover, .active { background-position: -310px -112px; }
 
 nav li a.more { background-position: -410px 0px; }
-nav li a.more:hover { background-position: -410px -112px; }
+nav li a.more:hover, .active { background-position: -410px -112px; }
 
 nav li a.donate { background-position: -520px 0px; }
-nav li a.donate:hover { background-position: -520px -112px; }
-
-header a.active:hover{
-  box-shadow: none;
-}
+nav li a.donate:hover, .active { background-position: -520px -112px; }
 
 header a.bottom_nav{
   margin: 0px auto;
