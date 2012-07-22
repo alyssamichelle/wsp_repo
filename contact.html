@@ -54,13 +54,13 @@
 		<form class="wrapper">
 			<fieldset >
 				<h1>Contact Us Today</h1>
-				<input placeholder="First name" value="first name" required tabindex="1" autofocus></input>
+				<input placeholder="First name" required tabindex="1" autofocus></input>
 
-				<input placeholder="Last name" value="last name"required tabindex="2"></input>
+				<input placeholder="Last name" required tabindex="2"></input>
 
-				<input placeholder="john@gmail.com" value="email" required tabindex="3"></input>
+				<input placeholder="john@gmail.com" required tabindex="3"></input>
 
-				<textarea placeholder="Your message here" value="message" required tabindex="4"></textarea>
+				<textarea placeholder="Your message here" required tabindex="4"></textarea>
 
 				<select value="purpose" required tabindex="5">
 					<option selected="selected">I am ...</option>
@@ -73,9 +73,9 @@
 			</fieldset>
 
 		<!-- 				if I have a pet that needs a new home selected then show the rest of the form below -->
-<!-- 			<fieldset>
+			<fieldset id="responsive">
 				<label>Age of Chinchilla</label>
-				<select value="age">
+				<select value="age" tabindex="6">
 					<option>&lt;1</option>
 					<option>1-5</option>
 					<option>6-10</option>
@@ -86,24 +86,50 @@
 				<fieldset class="radio">
 					<legend>Gender of Pet</legend>
 					<label>Male</label>
-					<input type="radio" name="sex" value="male">
+					<input type="radio" name="sex" value="male" tabindex="7">
 
 					<label>Female</label>
 					<input type="radio" name="sex" checked="checked" value="female">
 				</fieldset>
 
-				<label for="bought from">Where did you get the Chinchilla?</label>
-				<select name="bought from">
+				<label for="bought_from">Where did you get the Chinchilla?</label>
+				<select name="bought_from" tabindex="8">
 					<option>Pet Store</option>
 					<option>Breeder</option>
 					<option>Other</option>
 				</select>
 
-				<label for="vet records">Please list any Vet record information below.</label>
-				<textarea name="vet records" placeholder="Vet records"></textarea>
-			</fieldset> -->
-			<input type="submit" name="submit" value="submit" />
+				<label for="vet_records">Please list any Vet record information below.</label>
+				<textarea name="vet_records" placeholder="Vet records" tabindex="9"></textarea>
+			</fieldset>
+			<input type="submit" name="submit" value="let's talk" tabindex="10"/>
 		</form>	
 	</div><!-- container -->
 </body>
+
+	<footer class="chubby_wrapper">
+		<nav class="wrapper">
+			<ul>
+				<li><a  class="bottom_nav"href="index.html">Home</a></li>
+				<li><a class="active bottom_nav" href="contact.html">Contact</a></li>
+				<li><a class="bottom_nav" href="adopt.html">Adopt</a></li>
+				<li><a class="bottom_nav" href="photos.html">Photos</a></li>
+				<li><a class="bottom_nav" href="more.html">More </a></li>
+				<li><a class="bottom_nav" href="donate.html">Donate</a></li>
+			</ul>
+		</nav>
+	</footer>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

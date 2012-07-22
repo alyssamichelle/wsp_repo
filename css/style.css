@@ -4,273 +4,269 @@
 #d0ebea paleblue
 #a1d5d2 darkerblue
 #8b7a5b brown*/
-
-
-
 /* #Site Styles
 ================================================== */
-
-.container{
+.container {
   margin-top: 0px;
-  overflow: hidden;
-}
-
+  overflow: hidden; }
 
 body {
   background: url("../img/css/egg_shell.png") repeat fixed;
   font-family: "Quicksand", helvetica, sans-serif;
-  font-weight: 100;
-}
+  font-weight: 100; }
 
 .wrapper {
   width: 67%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .chubby-wrapper {
   width: 72%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
-header{
-  background-image: url("../img/css/header_pattern.jpg") repeat;
-  background-color: #4d4f50;
-  height: 300px;
-}
+header {
+  background: #4d4f50 url("../img/css/header_pattern.jpg") repeat-x;
+  height: 300px; }
 
-header h1{
-  float: right;
-}
+header h1 {
+  float: right; }
 
-header h1 img{
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-}
+header h1 img {
+  box-shadow: black 1px 1px 70px; }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
   font-family: "Quicksand", helvetica, sans-serif;
   font-weight: bold;
   color: #000;
-  margin-top: 0px;
-}
+  margin-top: 0px; }
 
-p{
+p {
   color: #000;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
-a{
+a {
   display: inline-block;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-a:hover{
-  /*box-shadow: inset #383737 0px 0px 2px 1px;*/
-}
+a:hover {
+  /*box-shadow: inset #383737 0px 0px 2px 1px;*/ }
+
+footer {
+  background: #4d4f50 url("../img/css/footer_pattern.jpg") repeat-x left bottom;
+  height: 200px; }
+  footer nav li {
+    float: left;
+    margin-right: 20px;
+    line-height: 30px; }
+  footer nav li:last-child {
+    margin-right: 0px; }
 
 /* #nav Styles
 ================================================== */
-nav{
+header nav {
   display: inline;
   color: #000;
   margin-top: 5px;
   overflow: hidden;
-  position: relative;
-}
+  position: relative; }
 
-nav img{
+header nav img {
   display: block;
   width: 150px;
   position: absolute;
-  background-position: 0px 0px;
-}
+  background-position: 0px 0px; }
 
-#contact_button{
+header #contact_button {
+  top: 100px;
+  left: 150px; }
+
+header #contact_button:hover {
   top: 100px;
   left: 150px;
-}
-#contact_button:hover{
-  top: 100px;
-  left: 150px;
-  background-position: 0px -180px;
-}
+  background-position: 0px -180px; }
 
-ul{
+header ul {
   overflow: hidden;
   padding: 0px;
   margin: 0px;
-  width: 100%;
-}
+  width: 100%; }
 
-nav li{
+header nav li {
   float: left;
   text-indent: -9999px;
-  margin: 0px 0px 0px 15px;
-}
+  margin: 0px 0px 0px 15px; }
 
-nav li:first-child{
+header nav li:first-child {
   margin: 0px;
-  width: 100px;
-}
+  width: 100px; }
 
-nav li {
+header nav li {
   width: 100px;
   height: 112px;
-  margin-right: 100px;
-}
+  margin-right: 100px; }
 
-nav li a {
+header nav li a {
   display: block;
-  background: url('../img/icon/icon_sprite.png') no-repeat;
-}
+  background: url("../img/icon/icon_sprite.png") no-repeat; }
 
-nav li a.home { background-position: 0px 0px; }
-nav li a.home:hover { background-position: 0px -113px; }
+nav li a.home {
+  background-position: 0px 0px; }
 
-nav li a.contact { background-position:-105px 0px; }
-nav li a.contact:hover { background-position: -100px -113px; }
+nav li a.home:hover {
+  background-position: 0px -113px; }
 
-nav li a.adopt { background-position: -210px 0px; }
-nav li a.adopt:hover { background-position: -210px -112px; }
+nav li a.contact {
+  background-position: -105px 0px; }
 
-nav li a.photos { background-position: -310px 0px; }
-nav li a.photos:hover { background-position: -310px -112px; }
+nav li a.contact:hover {
+  background-position: -100px -113px; }
 
-nav li a.more { background-position: -410px 0px; }
-nav li a.more:hover { background-position: -410px -112px; }
+nav li a.adopt {
+  background-position: -210px 0px; }
 
-nav li a.donate { background-position: -520px 0px; }
-nav li a.donate:hover { background-position: -520px -112px; }
+nav li a.adopt:hover {
+  background-position: -210px -112px; }
 
-a.active:hover{
+nav li a.photos {
+  background-position: -310px 0px; }
+
+nav li a.photos:hover {
+  background-position: -310px -112px; }
+
+nav li a.more {
+  background-position: -410px 0px; }
+
+nav li a.more:hover {
+  background-position: -410px -112px; }
+
+nav li a.donate {
+  background-position: -520px 0px; }
+
+nav li a.donate:hover {
+  background-position: -520px -112px; }
+
+header a.active:hover {
   box-shadow: none;
-  background-color: rgba( 157, 157, 157, .8);
-}
+  background-color: rgba(157, 157, 157, 0.8); }
 
-
+header a.bottom_nav {
+  margin: 0px auto;
+  float: left; }
 
 /* #Contact Form Styles
 ================================================== */
-form{
+form {
   background: url("../img/css/paper_crumple_white.png") repeat;
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
-  box-shadow: rgba( 0, 0, 0, 1) 3px 3px 20px;
-}
+  box-shadow: black 3px 3px 20px; }
 
-fieldset{
+fieldset {
   border: none;
   padding: 0px 10%;
   width: 60%;
   margin: 0px 10%;
-  font-family: "Quicksand";
-}
+  font-family: "Quicksand"; }
 
-legend{
+legend {
   font-weight: 600;
   font-size: 40px;
   width: 100%;
-  padding-top: 10px;
-}
+  padding-top: 10px; }
 
-label{
+label {
   float: left;
-  clear: left;
-}
-form fieldset label{
+  clear: left; }
+
+form fieldset label {
   font-weight: 400;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
-fieldset h1{
-  margin-bottom: 10px;
-}
+fieldset h1 {
+  margin-bottom: 10px; }
 
-select, input, textarea{
+select, input, textarea {
   float: left;
   clear: both;
   font-size: 25px;
-  font-family: "Quicksand";
-}
-
-textarea{
-  height: 200px;
   line-height: 30px;
-}
+  text-indent: 5px;
+  font-family: "Quicksand"; }
 
-input, textarea{
+textarea {
+  height: 200px;
+  line-height: 30px; }
+
+input, textarea {
   width: 100%;
-  margin-bottom: 5px;
-}
+  margin-bottom: 10px; }
 
- fieldset.radio{
+fieldset.radio {
   padding: 10px;
   margin: 0px;
   width: 100%;
-  margin: 5px 0px 5px;
- }
+  margin: 5px 0px 5px; }
 
-.radio label, .radio input{
+.radio label, .radio input {
   display: block;
   float: left;
   clear: none;
   margin: 0px;
   width: auto;
-  margin: 0px 5px 5px;
-}
+  margin: 0px 5px 5px; }
 
-input[type="submit"]{
+input[type="submit"] {
   float: right;
-  width: 100px;
-  height: 35px;
-  margin: 0 20% 50px;
+  width: 130px;
+  height: 40px;
+  margin: 0 20% 10px;
+  line-height: 40px; }
 
-}
+input[type="submit"]:hover {
+  background-color: grey; }
 
-input[type="submit"]:hover{
-  background-color: grey;
-}
+fieldset#responsive {
+  display: none; }
 
 /* #banner Styles
 ================================================== */
-#banner_home{
+#banner_home {
   height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_home.png') no-repeat center top;
-}
-#banner_adopt{
+  box-shadow: black 1px 1px 70px;
+  background: url("../img/banner/banner_home.png") no-repeat center top; }
+
+#banner_adopt {
   height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_adopt.png') no-repeat center top;
-}
-#banner_contact{
+  box-shadow: black 1px 1px 70px;
+  background: url("../img/banner/banner_adopt.png") no-repeat center top; }
+
+#banner_contact {
   height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_contact.png') no-repeat center top;
-}
-#banner_photos{
+  box-shadow: black 1px 1px 70px;
+  background: url("../img/banner/banner_contact.png") no-repeat center top; }
+
+#banner_photos {
   height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_photos.png') no-repeat center top;
-}
-#banner_more{
+  box-shadow: black 1px 1px 70px;
+  background: url("../img/banner/banner_photos.png") no-repeat center top; }
+
+#banner_more {
   height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_more.png') no-repeat center top;
-}
-#banner_donate{
+  box-shadow: black 1px 1px 70px;
+  background: url("../img/banner/banner_more.png") no-repeat center top; }
+
+#banner_donate {
   height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_donate.png') no-repeat center top;
-}
-#banner img{
+  box-shadow: black 1px 1px 70px;
+  background: url("../img/banner/banner_donate.png") no-repeat center top; }
+
+#banner img {
   width: 1040px;
   margin: 0px;
-  height: 291px;
-}
+  height: 291px; }
 
-.caption{
+.caption {
   background-color: #804d75;
   font-family: "quicksand";
   font-weight: book;
@@ -278,64 +274,41 @@ input[type="submit"]:hover{
   text-align: center;
   margin: -3px auto 40px;
   padding: 0px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-}
+  box-shadow: black 1px 1px 70px; }
+
 /* #section Styles
 ================================================== */
+h1 {
+  margin-bottom: 0px; }
 
-h1{
-    margin-bottom: 0px;
-}
-section{
+section {
   background-color: #7da0a3;
-  padding: 20px;
-}
+  padding: 20px; }
 
-.wrapper a, .chubby-wrapper a{
-  text-decoration: none; 
-
-}
-
+.wrapper a, .chubby-wrapper a {
+  text-decoration: none; }
 
 /* #li on more pg Styles
 ================================================== */
-
-section ul li{
+section ul li {
   list-style: disc;
   /*list-style-image: ;*/
   font-weight: book;
   line-height: 25px;
-  font-family: "Quicksand", helvetica, sans-serif;
-}
-
-
+  font-family: "Quicksand", helvetica, sans-serif; }
 
 /* #Media Queries
 ================================================== */
-
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
-
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
-
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  body {
+    position: relative; }
 
-  body{
-    position: relative;
-  }
-
-  nav{
+  nav {
     position: absolute;
     bottom: 0px;
-    left: 0px;
-  }
-}
-
+    left: 0px; } }
