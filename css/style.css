@@ -223,7 +223,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: grey; }
 
-fieldset#responsive {
+fieldset#purpose-options {
   display: none; }
 
 /* #banner Styles

@@ -52,18 +52,18 @@
 
 				<textarea placeholder="Your message here" required tabindex="4"></textarea>
 
-				<select value="purpose" required tabindex="5">
-					<option selected="selected">I am ...</option>
-					<option>Interested in Adopting</option>
-					<option>Have a Pet that Needs a New Home</option>
-					<option>I am a Vet</option>
-					<option>I am a Breeder</option>
-					<option>A chinchilla spy, infiltrating your website</option>
+				<select id="purpose" value="purpose">
+					<option value="0" selected>I am ...</option>
+					<option value="1">Interested in Adopting</option>
+					<option value="2">Have a Pet that Needs a New Home</option>
+					<option value="3">I am a Vet</option>
+					<option value="4">I am a Breeder</option>
+					<option value="5">A chinchilla spy, infiltrating your website</option>
 				</select>
 			</fieldset>
 
 		<!-- 				if I have a pet that needs a new home selected then show the rest of the form below -->
-			<fieldset id="responsive">
+			<fieldset id="purpose-options">
 				<label>Age of Chinchilla</label>
 				<select value="age" tabindex="6">
 					<option>&lt;1</option>
