@@ -103,37 +103,37 @@ header nav li a {
 nav li a.home {
   background-position: 0px 0px; }
 
-nav li a.home:hover, .active {
+nav li a.home:hover, nav li a.home.active {
   background-position: 0px -113px; }
 
 nav li a.contact {
   background-position: -105px 0px; }
 
-nav li a.contact:hover, .active {
+nav li a.contact:hover, nav li a.contact.active {
   background-position: -100px -113px; }
 
 nav li a.adopt {
   background-position: -210px 0px; }
 
-nav li a.adopt:hover, .active {
+nav li a.adopt:hover, nav li a.adopt.active {
   background-position: -210px -112px; }
 
 nav li a.photos {
   background-position: -310px 0px; }
 
-nav li a.photos:hover, .active {
+nav li a.photos:hover, nav li a.photos.active {
   background-position: -310px -112px; }
 
 nav li a.more {
   background-position: -410px 0px; }
 
-nav li a.more:hover, .active {
+nav li a.more:hover, nav li a.more.active {
   background-position: -410px -112px; }
 
 nav li a.donate {
   background-position: -520px 0px; }
 
-nav li a.donate:hover, .active {
+nav li a.donate:hover, nav li a.donate.active {
   background-position: -520px -112px; }
 
 header a.bottom_nav {
