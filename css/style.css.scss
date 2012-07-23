@@ -32,8 +32,8 @@ body {
   margin: 0 auto;
 }
 
-header{
-  background: #4d4f50 url("../img/css/header_pattern.jpg") repeat-x;
+header{/*
+  background: #4d4f50 url("../img/css/header_pattern.jpg") repeat-x;*/
   height: 300px;
 }
 
@@ -42,7 +42,7 @@ header h1{
 }
 
 header h1 img{
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 5px;
 }
 
 h1, h2, h3, h4{
@@ -63,12 +63,6 @@ a{
   height: 100%;
 }
 
-a:hover{
-  /*box-shadow: inset #383737 0px 0px 2px 1px;*/
-}
-
-
-
 /* #nav Styles
 ================================================== */
 header nav{
@@ -86,10 +80,10 @@ header nav img{
   background-position: 0px 0px;
 }
 
-header #contact_button{
+/*header #contact_button{
   top: 100px;
   left: 150px;
-}
+}*/
 
 header #contact_button:hover{
   top: 100px;
@@ -176,7 +170,7 @@ form{
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
-  box-shadow: rgba( 0, 0, 0, 1) 3px 3px 20px;
+  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 5px;
 }
 
 fieldset{
@@ -259,34 +253,28 @@ fieldset#purpose-options{
 }
 /* #banner Styles
 ================================================== */
-#banner_home{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_home.png') no-repeat center top;
-}
-#banner_adopt{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_adopt.png') no-repeat center top;
-}
-#banner_contact{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
-  background: url('../img/banner/banner_contact.png') no-repeat center top;
-}
+#banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,
 #banner_photos{
   height: 266px;
   box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+}
+
+#banner_home{
+  background: url('../img/banner/banner_home.png') no-repeat center top;
+}
+#banner_adopt{
+  background: url('../img/banner/banner_adopt.png') no-repeat center top;
+}
+#banner_contact{
+  background: url('../img/banner/banner_contact.png') no-repeat center top;
+}
+#banner_photos{
   background: url('../img/banner/banner_photos.png') no-repeat center top;
 }
 #banner_more{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
   background: url('../img/banner/banner_more.png') no-repeat center top;
 }
 #banner_donate{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
   background: url('../img/banner/banner_donate.png') no-repeat center top;
 }
 #banner img{
