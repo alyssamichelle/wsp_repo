@@ -24,21 +24,21 @@ body {
   margin: 0 auto; }
 
 header {
-     /*
-background: #4d4f50 url("../img/css/header_pattern.jpg") repeat-x;*/
+  background: url("../img/css/header_pattern.png") repeat-x;
   height: 300px; }
 
 header h1 {
-  float: right; }
-
-header h1 img {
-  box-shadow: black 1px 1px 5px; }
+  float: left;
+  width: 100px; }
 
 h1, h2, h3, h4 {
-  font-family: "Quicksand", helvetica, sans-serif;
+  font-family: "Chunk five", helvetica, sans-serif;
   font-weight: bold;
   color: #000;
   margin-top: 0px; }
+
+h4 {
+  font-size: 15px; }
 
 p {
   color: #000;
@@ -49,24 +49,43 @@ a {
   width: 100%;
   height: 100%; }
 
+li {
+  list-style: none;
+  line-height: 25px; }
+
+footer {
+  background: url("../img/css/footer_pattern.png") repeat-x left bottom;
+  height: 200px; }
+  footer nav li {
+    float: left;
+    margin-right: 20px;
+    line-height: 30px;
+    font-family: "Chunk five", helvetica, sans-serif;
+    font-weight: bold;
+    margin: 20px; }
+  footer nav li:last-child {
+    margin-right: 0px; }
+  footer nav a {
+    color: #000; }
+  footer nav a:hover {
+    color: #fff; }
+
 /* #nav Styles
 ================================================== */
 header nav {
+  font-family: "Chunk five", helvetica, sans-serif;
+  font-weight: bold;
   display: inline-block;
-  color: #000;
   margin-top: 40px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 90%; }
 
-header nav img {
+/*header nav img{
   display: block;
   width: 150px;
   position: absolute;
-  background-position: 0px 0px; }
-
-/*header #contact_button{
-  top: 100px;
-  left: 150px;
+  background-position: 0px 0px;
 }*/
 header #contact_button:hover {
   top: 100px;
@@ -96,7 +115,7 @@ header nav li a {
   background: url("../img/icon/icon_sprite.png") no-repeat;
   vertical-align: bottom;
   line-height: 200px;
-  color: #f3f3f3; }
+  color: #000; }
 
 nav li a.home {
   background-position: 0px 0px; }
@@ -110,43 +129,33 @@ nav li a.contact {
 nav li a.contact:hover, nav li a.contact.active {
   background-position: -100px -113px; }
 
-nav li a.adopt {
+nav li a.photos {
   background-position: -210px 0px; }
 
-nav li a.adopt:hover, nav li a.adopt.active {
+nav li a.photos:hover, nav li a.photos.active {
   background-position: -210px -112px; }
 
-nav li a.photos {
+nav li a.donate {
   background-position: -310px 0px; }
 
-nav li a.photos:hover, nav li a.photos.active {
+nav li a.donate:hover, nav li a.donate.active {
   background-position: -310px -112px; }
 
-nav li a.more {
+nav li a.adopt {
   background-position: -410px 0px; }
 
-nav li a.more:hover, nav li a.more.active {
+nav li a.adopt:hover, nav li a.adopt.active {
   background-position: -410px -112px; }
 
-nav li a.donate {
+nav li a.more {
   background-position: -520px 0px; }
 
-nav li a.donate:hover, nav li a.donate.active {
+nav li a.more:hover, nav li a.more.active {
   background-position: -520px -112px; }
 
 header a.bottom_nav {
   margin: 0px auto;
   float: left; }
-
-footer {
-  background: #4d4f50 url("../img/css/footer_pattern.jpg") repeat-x left bottom;
-  height: 200px; }
-  footer nav li {
-    float: left;
-    margin-right: 20px;
-    line-height: 30px; }
-  footer nav li:last-child {
-    margin-right: 0px; }
 
 /* #Contact Form Styles
 ================================================== */
@@ -154,8 +163,7 @@ form {
   background: url("../img/css/paper_crumple_white.png") repeat;
   overflow: hidden;
   padding-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: black 1px 1px 5px; }
+  padding-bottom: 50px; }
 
 fieldset {
   border: none;
@@ -219,7 +227,7 @@ input[type="submit"] {
   line-height: 40px; }
 
 input[type="submit"]:hover {
-  background-color: grey; }
+  background-color: #f5f5f5; }
 
 fieldset#purpose-options {
   display: none; }
@@ -228,8 +236,9 @@ fieldset#purpose-options {
 ================================================== */
 #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,
 #banner_photos {
-  height: 266px;
-  box-shadow: black 1px 1px 70px; }
+  height: 212px;
+  border: 12px dashed #000;
+  padding: 28px 12px; }
 
 #banner_home {
   background: url("../img/banner/banner_home.png") no-repeat center top; }
@@ -241,7 +250,7 @@ fieldset#purpose-options {
   background: url("../img/banner/banner_contact.png") no-repeat center top; }
 
 #banner_photos {
-  background: url("../img/banner/banner_photos.png") no-repeat center top; }
+  background: url("../img/banner/banner_home.png") no-repeat center top; }
 
 #banner_more {
   background: url("../img/banner/banner_more.png") no-repeat center top; }
@@ -255,14 +264,11 @@ fieldset#purpose-options {
   height: 291px; }
 
 .caption {
-  background-color: #804d75;
-  font-family: "quicksand";
-  font-weight: book;
+  font-weight: 600;
   font-size: 40px;
   text-align: center;
   margin: -3px auto 40px;
-  padding: 0px;
-  box-shadow: black 1px 1px 70px; }
+  padding: 0px; }
 
 /* #section Styles
 ================================================== */
@@ -270,20 +276,65 @@ h1 {
   margin-bottom: 0px; }
 
 section {
-  background-color: #7da0a3;
-  padding: 20px; }
+  padding: 20px;
+  border: 12px dashed #000;
+  margin: 40px;
+  overflow: hidden; }
 
 .wrapper a, .chubby-wrapper a {
   text-decoration: none; }
 
+/* #Theme Styles
+================================================== */
+.purple h1, .purple h2, .purple h3, .purple h4, .purple .caption {
+  color: #804d75; }
+.purple #banner_home, .purple #banner_adopt, .purple #banner_contact, .purple #banner_more, .purple #banner_donate, .purple #banner_photos, .purple section {
+  border-color: #804d75; }
+
+.blue h1, .blue h2, .blue h3, .blue h4, .blue .caption {
+  color: #7da0a3; }
+.blue #banner_home, .blue #banner_adopt, .blue #banner_contact, .blue #banner_more, .blue #banner_donate, .blue #banner_photos, .blue section {
+  border-color: #7da0a3; }
+
+.pink h1, .pink h2, .pink h3, .pink h4, .pink .caption {
+  color: #ce5353; }
+.pink #banner_home, .pink #banner_adopt, .pink #banner_contact, .pink #banner_more, .pink #banner_donate, .pink #banner_photos, .pink section {
+  border-color: #ce5353; }
+
+.brown h1, .brown h2, .brown h3, .brown h4, .brown .caption {
+  color: #b68454; }
+.brown #banner_home, .brown #banner_adopt, .brown #banner_contact, .brown #banner_more, .brown #banner_donate, .brown #banner_photos, .brown section {
+  border-color: #b68454; }
+
+.green h1, .green h2, .green h3, .green h4, .green .caption {
+  color: #60b432; }
+.green #banner_home, .green #banner_adopt, .green #banner_contact, .green #banner_more, .green #banner_donate, .green #banner_photos, .green section {
+  border-color: #60b432; }
+
+.yellow h1, .yellow h2, .yellow h3, .yellow h4, .yellow .caption {
+  color: #fbedc3; }
+.yellow #banner_home, .yellow #banner_adopt, .yellow #banner_contact, .yellow #banner_more, .yellow #banner_donate, .yellow #banner_photos, .yellow section {
+  border-color: #fbedc3; }
+
 /* #li on more pg Styles
 ================================================== */
 section ul li {
-  list-style: disc;
-  /*list-style-image: ;*/
-  font-weight: book;
+  font-family: "Chunk five", helvetica, sans-serif;
+  font-weight: bold;
   line-height: 25px;
-  font-family: "Quicksand", helvetica, sans-serif; }
+  margin: 10px;
+  width: 400px;
+  float: left; }
+
+ul.links {
+  padding: 0px; }
+  ul.links li {
+    width: 300px;
+    display: inline-block; }
+    ul.links li a {
+      color: #000; }
+    ul.links li a:hover {
+      color: #7da0a3; }
 
 /* #Media Queries
 ================================================== */

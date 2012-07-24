@@ -32,24 +32,25 @@ body {
   margin: 0 auto;
 }
 
-header{/*
-  background: #4d4f50 url("../img/css/header_pattern.jpg") repeat-x;*/
+header{
+  background: url("../img/css/header_pattern.png") repeat-x;
   height: 300px;
 }
 
 header h1{
-  float: right;
-}
-
-header h1 img{
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 5px;
+  float: left;
+  width: 100px;
 }
 
 h1, h2, h3, h4{
-  font-family: "Quicksand", helvetica, sans-serif;
+  font-family: "Chunk five", helvetica, sans-serif;
   font-weight: bold;
   color: #000;
   margin-top: 0px;
+}
+
+h4{
+  font-size: 15px;
 }
 
 p{
@@ -63,26 +64,57 @@ a{
   height: 100%;
 }
 
+li{
+  list-style: none;
+  line-height: 25px;
+}
+
+footer{
+  background: url("../img/css/footer_pattern.png") repeat-x left bottom;
+  height: 200px;
+
+  nav{
+
+    li{
+      float: left;
+      margin-right: 20px;
+      line-height: 30px;
+      font-family: "Chunk five", helvetica, sans-serif;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    li:last-child{
+      margin-right: 0px;
+    }
+
+    a{
+      color:#000;
+    }
+
+    a:hover{
+      color:#fff;
+    }
+  }
+}
+
 /* #nav Styles
 ================================================== */
 header nav{
+  font-family: "Chunk five", helvetica, sans-serif;
+  font-weight: bold;
   display: inline-block;
-  color: #000;
   margin-top: 40px;
   overflow: hidden;
   position: relative;
+  width: 90%;
 }
 
-header nav img{
+/*header nav img{
   display: block;
   width: 150px;
   position: absolute;
   background-position: 0px 0px;
-}
-
-/*header #contact_button{
-  top: 100px;
-  left: 150px;
 }*/
 
 header #contact_button:hover{
@@ -119,48 +151,30 @@ header nav li a {
   background: url('../img/icon/icon_sprite.png') no-repeat;
   vertical-align: bottom;
   line-height: 200px;
-  color: #f3f3f3;
+  color: #000;
 }
 
 nav li a.home { background-position: 0px 0px; }
-nav li a.home:hover, nav li a.home.active { background-position: 0px -113px; }
+nav li a.home:hover, nav li a.home.active{ background-position: 0px -113px; }
 
-nav li a.contact { background-position:-105px 0px; }
+nav li a.contact { background-position: -105px 0px; }
 nav li a.contact:hover, nav li a.contact.active { background-position: -100px -113px; }
 
-nav li a.adopt { background-position: -210px 0px; }
-nav li a.adopt:hover, nav li a.adopt.active { background-position: -210px -112px; }
+nav li a.photos { background-position: -210px 0px; }
+nav li a.photos:hover, nav li a.photos.active { background-position: -210px -112px; }
 
-nav li a.photos { background-position: -310px 0px; }
-nav li a.photos:hover, nav li a.photos.active { background-position: -310px -112px; }
+nav li a.donate { background-position: -310px 0px; }
+nav li a.donate:hover, nav li a.donate.active { background-position: -310px -112px; }
 
-nav li a.more { background-position: -410px 0px; }
-nav li a.more:hover, nav li a.more.active { background-position: -410px -112px; }
+nav li a.adopt { background-position: -410px 0px; }
+nav li a.adopt:hover, nav li a.adopt.active { background-position: -410px -112px; }
 
-nav li a.donate { background-position: -520px 0px; }
-nav li a.donate:hover, nav li a.donate.active { background-position: -520px -112px; }
+nav li a.more { background-position: -520px 0px; }
+nav li a.more:hover, nav li a.more.active { background-position: -520px -112px; }
 
 header a.bottom_nav{
   margin: 0px auto;
   float: left;
-}
-
-footer{
-  background: #4d4f50 url("../img/css/footer_pattern.jpg") repeat-x left bottom;
-  height: 200px;
-
-  nav{
-
-    li{
-      float: left;
-      margin-right: 20px;
-      line-height: 30px;
-
-    }
-    li:last-child{
-      margin-right: 0px;
-    }
-  }
 }
 
 /* #Contact Form Styles
@@ -170,7 +184,6 @@ form{
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 5px;
 }
 
 fieldset{
@@ -192,6 +205,7 @@ label{
   float: left;
   clear: left;
 }
+
 form fieldset label{
   font-weight: 400;
   font-size: 30px;
@@ -245,18 +259,20 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-  background-color: grey;
+  background-color: #f5f5f5;
 }
 
 fieldset#purpose-options{
   display: none;
 }
+
 /* #banner Styles
 ================================================== */
 #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,
 #banner_photos{
-  height: 266px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
+  height: 212px;
+  border: 12px dashed #000;
+  padding: 28px 12px;
 }
 
 #banner_home{
@@ -269,7 +285,7 @@ fieldset#purpose-options{
   background: url('../img/banner/banner_contact.png') no-repeat center top;
 }
 #banner_photos{
-  background: url('../img/banner/banner_photos.png') no-repeat center top;
+  background: url('../img/banner/banner_home.png') no-repeat center top;
 }
 #banner_more{
   background: url('../img/banner/banner_more.png') no-repeat center top;
@@ -284,14 +300,11 @@ fieldset#purpose-options{
 }
 
 .caption{
-  background-color: #804d75;
-  font-family: "quicksand";
-  font-weight: book;
+  font-weight: 600;
   font-size: 40px;
   text-align: center;
   margin: -3px auto 40px;
   padding: 0px;
-  box-shadow: rgba( 0, 0, 0, 1) 1px 1px 70px;
 }
 /* #section Styles
 ================================================== */
@@ -301,8 +314,10 @@ h1{
 }
 
 section{
-  background-color: #7da0a3;
   padding: 20px;
+  border: 12px dashed #000;
+  margin: 40px;
+  overflow: hidden;
 }
 
 .wrapper a, .chubby-wrapper a{
@@ -310,17 +325,90 @@ section{
 }
 
 
+/* #Theme Styles
+================================================== */
+.purple { 
+  h1, h2, h3, h4, .caption {
+    color: #804d75;
+  }
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+    border-color: #804d75;
+  }
+}
+
+.blue { 
+  h1, h2, h3, h4, .caption {
+    color: #7da0a3;
+  }
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+    border-color: #7da0a3;
+  }
+}
+
+.pink { 
+  h1, h2, h3, h4, .caption {
+    color: #ce5353;
+  }
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+    border-color: #ce5353;
+  }
+}
+
+.brown { 
+  h1, h2, h3, h4, .caption {
+    color: #b68454;
+  }
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+    border-color: #b68454;
+  }
+}
+
+.green { 
+  h1, h2, h3, h4, .caption {
+    color: #60b432;
+  }
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+    border-color: #60b432;
+  }
+}
+
+.yellow { 
+  h1, h2, h3, h4, .caption {
+    color: #fbedc3;
+  }
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+    border-color: #fbedc3;
+  }
+}
+
 /* #li on more pg Styles
 ================================================== */
 
 section ul li{
-  list-style: disc;
-  /*list-style-image: ;*/
-  font-weight: book;
+  font-family: "Chunk five", helvetica, sans-serif;
+  font-weight: bold;
   line-height: 25px;
-  font-family: "Quicksand", helvetica, sans-serif;
+  margin: 10px;
+  width: 400px;
+  float: left;
 }
 
+ul.links{
+  padding: 0px;
+
+    li{
+      width: 300px;
+      display: inline-block;
+
+        a{
+          color: #000;
+        }
+
+        a:hover{
+          color:#7da0a3;
+        }
+    }
+}
 
 
 /* #Media Queries
@@ -351,4 +439,3 @@ section ul li{
     left: 0px;
   }
 }
-
