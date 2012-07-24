@@ -44,7 +44,12 @@ body {
 
 header h1{
   float: left;
-  width: 100px;
+  width: 30%;
+
+  & img{
+    width: 100%;
+    float: left;
+  }
 }
 
 h1, h2, h3, h4{
@@ -112,7 +117,8 @@ header nav{
   margin-top: 40px;
   overflow: hidden;
   position: relative;
-  width: 90%;
+  width: 70%;
+
 }
 
 /*header nav img{
@@ -160,22 +166,22 @@ header nav li a {
 }
 
 nav li a.home { background-position: 0px 0px; }
-nav li a.home:hover, nav li a.home.active{ background-position: 0px -113px; }
+nav li a.home:hover, nav li a.home.active{ background-position: 0px -133px; }
 
 nav li a.contact { background-position: -105px 0px; }
-nav li a.contact:hover, nav li a.contact.active { background-position: -100px -113px; }
+nav li a.contact:hover, nav li a.contact.active { background-position: -100px -133px; }
 
 nav li a.photos { background-position: -210px 0px; }
-nav li a.photos:hover, nav li a.photos.active { background-position: -210px -112px; }
+nav li a.photos:hover, nav li a.photos.active { background-position: -210px -132px; }
 
 nav li a.donate { background-position: -310px 0px; }
-nav li a.donate:hover, nav li a.donate.active { background-position: -310px -112px; }
+nav li a.donate:hover, nav li a.donate.active { background-position: -310px -132px; }
 
 nav li a.adopt { background-position: -410px 0px; }
-nav li a.adopt:hover, nav li a.adopt.active { background-position: -410px -112px; }
+nav li a.adopt:hover, nav li a.adopt.active { background-position: -410px -132px; }
 
 nav li a.more { background-position: -520px 0px; }
-nav li a.more:hover, nav li a.more.active { background-position: -520px -112px; }
+nav li a.more:hover, nav li a.more.active { background-position: -520px -132px; }
 
 header a.bottom_nav{
   margin: 0px auto;
@@ -328,6 +334,7 @@ header a.bottom_nav{
     line-height: 20px;
 
     a{
+      display: inline;
       text-decoration: none;
       color: #000;
       font-weight: 500;
@@ -356,16 +363,14 @@ header a.bottom_nav{
 
   }/*end smallSection*/
 
-  div.smallP{
+  blockquote.smallP{
     display: block;
-    width: 28%;
+    width: 50%;
     float: right;
     font-weight: 500;
-    margin-top: -10px;
-    margin-bottom: 0px;
-    margin-left: 20px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
+    margin: 2%;
 
     & em{
       font-size: 50px;
