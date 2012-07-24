@@ -10,32 +10,37 @@
 /* #Site Styles
 ================================================== */
 
-.container{
-  margin-top: 0px;
-  overflow: hidden;
-}
+
 
 
 body {
   background: url("../img/css/egg_shell.png") repeat fixed;
   font-family: "Quicksand", helvetica, sans-serif;
   font-weight: 100;
-}
 
-.wrapper {
-  width: 67%;
-  margin: 0 auto;
-}
+  .container{
+    margin-top: 0px;
+    overflow: hidden;
 
-.chubby-wrapper {
-  width: 72%;
-  margin: 0 auto;
-}
+    header{
+      background: url("../img/css/header_pattern.png") repeat-x;
+      height: 300px;
 
-header{
-  background: url("../img/css/header_pattern.png") repeat-x;
-  height: 300px;
-}
+      .wrapper {
+        width: 67%;
+        margin: 0 auto;
+      } /*end wrapper*/
+    }/*end header*/
+
+    .chubby-wrapper {
+      width: 72%;
+      margin: 0 auto;
+    }/*end chubby-wrapper*/
+
+  }/*end container*/
+}/*end body*/
+
+
 
 header h1{
   float: left;
@@ -179,93 +184,94 @@ header a.bottom_nav{
 
 /* #Contact Form Styles
 ================================================== */
-form{
-  background: url("../img/css/paper_crumple_white.png") repeat;
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.wrapper{
+  form{
+  /*  background: url("../img/css/paper_crumple_white.png") repeat;*/
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  fieldset{
+    border: none;
+    padding: 0px 10%;
+    width: 60%;
+    margin: 0px 10%;
+    font-family: "Quicksand";
+  }
+
+  legend{
+    font-weight: 600;
+    font-size: 40px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  label{
+    float: left;
+    clear: left;
+  }
+
+  form fieldset label{
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  fieldset h1{
+    margin-bottom: 10px;
+  }
+
+  select, input, textarea{
+    float: left;
+    clear: both;
+    font-size: 25px;
+    line-height: 30px;
+    text-indent: 5px;
+    font-family: "Quicksand";
+  }
+
+  textarea{
+    height: 200px;
+    line-height: 30px;
+  }
+
+  input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+   fieldset.radio{
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    margin: 5px 0px 5px;
+   }
+
+  .radio label, .radio input{
+    display: block;
+    float: left;
+    clear: none;
+    margin: 0px;
+    width: auto;
+    margin: 0px 5px 5px;
+  }
+
+  input[type="submit"]{
+    float: right;
+    width: 130px;
+    height: 40px;
+    margin: 0 20% 10px;
+    line-height: 40px
+  }
+
+  input[type="submit"]:hover{
+    background-color: #f5f5f5;
+  }
+
+  fieldset#purpose-options{
+    display: none;
+  }
 }
-
-fieldset{
-  border: none;
-  padding: 0px 10%;
-  width: 60%;
-  margin: 0px 10%;
-  font-family: "Quicksand";
-}
-
-legend{
-  font-weight: 600;
-  font-size: 40px;
-  width: 100%;
-  padding-top: 10px;
-}
-
-label{
-  float: left;
-  clear: left;
-}
-
-form fieldset label{
-  font-weight: 400;
-  font-size: 30px;
-}
-
-fieldset h1{
-  margin-bottom: 10px;
-}
-
-select, input, textarea{
-  float: left;
-  clear: both;
-  font-size: 25px;
-  line-height: 30px;
-  text-indent: 5px;
-  font-family: "Quicksand";
-}
-
-textarea{
-  height: 200px;
-  line-height: 30px;
-}
-
-input, textarea{
-  width: 100%;
-  margin-bottom: 10px;
-}
-
- fieldset.radio{
-  padding: 10px;
-  margin: 0px;
-  width: 100%;
-  margin: 5px 0px 5px;
- }
-
-.radio label, .radio input{
-  display: block;
-  float: left;
-  clear: none;
-  margin: 0px;
-  width: auto;
-  margin: 0px 5px 5px;
-}
-
-input[type="submit"]{
-  float: right;
-  width: 130px;
-  height: 40px;
-  margin: 0 20% 10px;
-  line-height: 40px
-}
-
-input[type="submit"]:hover{
-  background-color: #f5f5f5;
-}
-
-fieldset#purpose-options{
-  display: none;
-}
-
 /* #banner Styles
 ================================================== */
 #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,

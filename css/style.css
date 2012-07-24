@@ -6,27 +6,28 @@
 #8b7a5b brown*/
 /* #Site Styles
 ================================================== */
-.container {
-  margin-top: 0px;
-  overflow: hidden; }
-
 body {
   background: url("../img/css/egg_shell.png") repeat fixed;
   font-family: "Quicksand", helvetica, sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  /*end container*/ }
+  body .container {
+    margin-top: 0px;
+    overflow: hidden;
+    /*end header*/
+    /*end chubby-wrapper*/ }
+    body .container header {
+      background: url("../img/css/header_pattern.png") repeat-x;
+      height: 300px;
+      /*end wrapper*/ }
+      body .container header .wrapper {
+        width: 67%;
+        margin: 0 auto; }
+    body .container .chubby-wrapper {
+      width: 72%;
+      margin: 0 auto; }
 
-.wrapper {
-  width: 67%;
-  margin: 0 auto; }
-
-.chubby-wrapper {
-  width: 72%;
-  margin: 0 auto; }
-
-header {
-  background: url("../img/css/header_pattern.png") repeat-x;
-  height: 300px; }
-
+/*end body*/
 header h1 {
   float: left;
   width: 100px; }
@@ -159,77 +160,64 @@ header a.bottom_nav {
 
 /* #Contact Form Styles
 ================================================== */
-form {
-  background: url("../img/css/paper_crumple_white.png") repeat;
+.wrapper form {
+  /*  background: url("../img/css/paper_crumple_white.png") repeat;*/
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px; }
-
-fieldset {
+.wrapper fieldset {
   border: none;
   padding: 0px 10%;
   width: 60%;
   margin: 0px 10%;
   font-family: "Quicksand"; }
-
-legend {
+.wrapper legend {
   font-weight: 600;
   font-size: 40px;
   width: 100%;
   padding-top: 10px; }
-
-label {
+.wrapper label {
   float: left;
   clear: left; }
-
-form fieldset label {
+.wrapper form fieldset label {
   font-weight: 400;
   font-size: 30px; }
-
-fieldset h1 {
+.wrapper fieldset h1 {
   margin-bottom: 10px; }
-
-select, input, textarea {
+.wrapper select, .wrapper input, .wrapper textarea {
   float: left;
   clear: both;
   font-size: 25px;
   line-height: 30px;
   text-indent: 5px;
   font-family: "Quicksand"; }
-
-textarea {
+.wrapper textarea {
   height: 200px;
   line-height: 30px; }
-
-input, textarea {
+.wrapper input, .wrapper textarea {
   width: 100%;
   margin-bottom: 10px; }
-
-fieldset.radio {
+.wrapper fieldset.radio {
   padding: 10px;
   margin: 0px;
   width: 100%;
   margin: 5px 0px 5px; }
-
-.radio label, .radio input {
+.wrapper .radio label, .wrapper .radio input {
   display: block;
   float: left;
   clear: none;
   margin: 0px;
   width: auto;
   margin: 0px 5px 5px; }
-
-input[type="submit"] {
+.wrapper input[type="submit"] {
   float: right;
   width: 130px;
   height: 40px;
   margin: 0 20% 10px;
   line-height: 40px; }
-
-input[type="submit"]:hover {
+.wrapper input[type="submit"]:hover {
   background-color: #f5f5f5; }
-
-fieldset#purpose-options {
+.wrapper fieldset#purpose-options {
   display: none; }
 
 /* #banner Styles
