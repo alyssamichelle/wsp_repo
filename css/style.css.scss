@@ -23,7 +23,7 @@ body {
     overflow: hidden;
 
     header{
-      background: url("../img/css/header_pattern.png") repeat-x;
+      /*background: url("../img/css/header_pattern.png") repeat-x;*/
       height: 300px;
 
       .wrapper {
@@ -45,6 +45,7 @@ body {
 header h1{
   float: left;
   width: 30%;
+  margin: 20px 2.5% 0px;
 
   & img{
     width: 100%;
@@ -99,11 +100,11 @@ footer{
     }
 
     a{
-      color:#000;
+      color: #000;
     }
 
     a:hover{
-      color:#fff;
+      color: #ce5353;
     }
   }
 }
@@ -114,10 +115,11 @@ header nav{
   font-family: "Chunk five", helvetica, sans-serif;
   font-weight: bold;
   display: inline-block;
-  margin-top: 40px;
   overflow: hidden;
   position: relative;
-  width: 70%;
+  width: 60%;
+  float: left;
+  margin: 0px 2.5%;
 
 }
 
@@ -152,7 +154,7 @@ header nav li:last-child{
 
 header nav li {
   width: 100px;
-  height: 112px;
+  height: 168px;
   margin-right: 50px;
 
 }
@@ -161,27 +163,31 @@ header nav li a {
   display: block;
   background: url('../img/icon/icon_sprite.png') no-repeat;
   vertical-align: bottom;
-  line-height: 200px;
+  line-height: 276px;
+  font-family: "Chunk five",  helvetica nue, helvetica, san-serif;
+  font-weight: 900;
+  font-size: 30px;
   color: #000;
+  text-decoration: none;
 }
 
 nav li a.home { background-position: 0px 0px; }
-nav li a.home:hover, nav li a.home.active{ background-position: 0px -133px; }
+nav li a.home:hover, nav li a.home.active{ background-position: 0px -189px; }
 
 nav li a.contact { background-position: -105px 0px; }
-nav li a.contact:hover, nav li a.contact.active { background-position: -100px -133px; }
+nav li a.contact:hover, nav li a.contact.active { background-position: -100px -189px; }
 
-nav li a.photos { background-position: -210px 0px; }
-nav li a.photos:hover, nav li a.photos.active { background-position: -210px -132px; }
+nav li a.links { background-position: -210px 0px; }
+nav li a.links:hover, nav li a.links.active { background-position: -210px -189px; }
 
 nav li a.donate { background-position: -310px 0px; }
-nav li a.donate:hover, nav li a.donate.active { background-position: -310px -132px; }
+nav li a.donate:hover, nav li a.donate.active { background-position: -310px -189px; }
 
 nav li a.adopt { background-position: -410px 0px; }
-nav li a.adopt:hover, nav li a.adopt.active { background-position: -410px -132px; }
+nav li a.adopt:hover, nav li a.adopt.active { background-position: -410px -189px; }
 
 nav li a.more { background-position: -520px 0px; }
-nav li a.more:hover, nav li a.more.active { background-position: -520px -132px; }
+nav li a.more:hover, nav li a.more.active { background-position: -520px -189px; }
 
 header a.bottom_nav{
   margin: 0px auto;
@@ -281,7 +287,7 @@ header a.bottom_nav{
 /* #banner Styles
 ================================================== */
 #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,
-#banner_photos{
+#banner_links{
   height: 150px;
   border: 12px dashed #000;
   padding: 28px 12px;
@@ -296,7 +302,7 @@ header a.bottom_nav{
 #banner_contact{
   background: url('../img/banner/banner_contact.png') no-repeat center top;
 }
-#banner_photos{
+#banner_links{
   background: url('../img/banner/banner_home.png') no-repeat center top;
 }
 #banner_more{
@@ -389,55 +395,55 @@ header a.bottom_nav{
 /* #Theme Styles
 ================================================== */
 .purple { 
-  h1, h2, h3, h4, .caption {
+  h1, h2, h3, h4, .caption, a:hover{
     color: #804d75;
   }
-  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_links, section {
     border-color: #804d75;
   }
 }
 
 .blue { 
-  h1, h2, h3, h4, .caption {
+  h1, h2, h3, h4, .caption, a:hover{
     color: #7da0a3;
   }
-  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_links, section {
     border-color: #7da0a3;
   }
 }
 
 .pink { 
-  h1, h2, h3, h4, .caption {
+  h1, h2, h3, h4, .caption, a:hover{
     color: #ce5353;
   }
-  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_links, section {
     border-color: #ce5353;
   }
 }
 
 .brown { 
-  h1, h2, h3, h4, .caption {
+  h1, h2, h3, h4, .caption, a:hover{
     color: #b68454;
   }
-  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_links, section {
     border-color: #b68454;
   }
 }
 
 .green { 
-  h1, h2, h3, h4, .caption {
+  h1, h2, h3, h4, .caption a:hover{
     color: #60b432;
   }
-  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_links, section {
     border-color: #60b432;
   }
 }
 
 .yellow { 
-  h1, h2, h3, h4, .caption {
+  h1, h2, h3, h4, .caption a:hover{
     color: #fbedc3;
   }
-  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_photos, section {
+  #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate, #banner_links, section {
     border-color: #fbedc3;
   }
 }
@@ -476,27 +482,33 @@ ul.links{
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+
+    body{
+      position: relative;
+    }
+
+    nav{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+    }
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  section{
+  width: 100%;
+  }
+}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) {}
 
-  body{
-    position: relative;
-  }
-
-  nav{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-  }
-}
