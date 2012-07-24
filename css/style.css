@@ -224,7 +224,7 @@ header a.bottom_nav {
 ================================================== */
 #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,
 #banner_photos {
-  height: 212px;
+  height: 150px;
   border: 12px dashed #000;
   padding: 28px 12px; }
 
@@ -260,18 +260,52 @@ header a.bottom_nav {
 
 /* #section Styles
 ================================================== */
-h1 {
-  margin-bottom: 0px; }
+.wrapper {
+  /*end smallSection*/ }
+  .wrapper h1 {
+    margin-bottom: 0px; }
+  .wrapper section {
+    padding: 20px;
+    border: 12px dashed #000;
+    margin: 40px;
+    overflow: hidden;
+    line-height: 20px; }
+    .wrapper section a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500; }
+      .wrapper section a:hover {
+        color: #ce5353; }
+  .wrapper .smallSection {
+    width: 500px;
+    float: left;
+    margin-top: 0px; }
+    .wrapper .smallSection li {
+      display: block;
+      width: 49%;
+      margin-right: 1%;
+      margin-left: 0px; }
+    .wrapper .smallSection li:even {
+      margin-right: 0px; }
+  .wrapper div.smallP {
+    display: block;
+    width: 28%;
+    float: right;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 20px; }
+    .wrapper div.smallP em {
+      font-size: 50px;
+      margin-left: -25px;
+      line-height: 40px;
+      font-weight: 600; }
+  .wrapper .wrapper a, .wrapper .chubby-wrapper a {
+    text-decoration: none; }
 
-section {
-  padding: 20px;
-  border: 12px dashed #000;
-  margin: 40px;
-  overflow: hidden; }
-
-.wrapper a, .chubby-wrapper a {
-  text-decoration: none; }
-
+/*end wrapper*/
 /* #Theme Styles
 ================================================== */
 .purple h1, .purple h2, .purple h3, .purple h4, .purple .caption {

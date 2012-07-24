@@ -276,7 +276,7 @@ header a.bottom_nav{
 ================================================== */
 #banner_home, #banner_adopt, #banner_contact, #banner_more, #banner_donate,
 #banner_photos{
-  height: 212px;
+  height: 150px;
   border: 12px dashed #000;
   padding: 28px 12px;
 }
@@ -315,21 +315,71 @@ header a.bottom_nav{
 /* #section Styles
 ================================================== */
 
-h1{
+.wrapper{
+  h1{
+      margin-bottom: 0px;
+  }
+
+  section{
+    padding: 20px;
+    border: 12px dashed #000;
+    margin: 40px;
+    overflow: hidden;
+    line-height: 20px;
+
+    a{
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+
+      &:hover{
+        color: #ce5353;
+      }
+    }
+  }
+
+  .smallSection{
+    width: 500px;
+    float: left;
+    margin-top: 0px;
+
+    li{
+      display: block;
+      width: 49%;
+      margin-right: 1%;
+      margin-left: 0px;
+    }
+
+    li:even{
+      margin-right:0px;
+    }
+
+  }/*end smallSection*/
+
+  div.smallP{
+    display: block;
+    width: 28%;
+    float: right;
+    font-weight: 500;
+    margin-top: -10px;
     margin-bottom: 0px;
-}
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 20px;
 
-section{
-  padding: 20px;
-  border: 12px dashed #000;
-  margin: 40px;
-  overflow: hidden;
-}
+    & em{
+      font-size: 50px;
+      margin-left: -25px;
+      line-height: 40px;
+      font-weight: 600;
+    }
 
-.wrapper a, .chubby-wrapper a{
-  text-decoration: none; 
-}
+  }
 
+  .wrapper a, .chubby-wrapper a{
+    text-decoration: none; 
+  }
+}/*end wrapper*/
 
 /* #Theme Styles
 ================================================== */
